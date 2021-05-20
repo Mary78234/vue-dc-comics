@@ -15,7 +15,6 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone. */
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 import HeaderComp from './components/HeaderComp.vue'
 import MainComp from './components/MainComp.vue'
 import FooterComp from './components/FooterComp.vue'
@@ -31,11 +30,8 @@ export default {
 </script>
 
 <style lang="scss">
-//general
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
+@import './assets/style/general.scss';
+@import './assets/style/utilities.scss';
 
 </style>
