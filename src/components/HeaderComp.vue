@@ -9,7 +9,10 @@
       <nav>
         <ul>
           <li v-for="(link, index) in links" :key="index">
-            <a :class="{'active': link.current}" :href="link.url">{{ link.text }}</a>
+            <a :class="(index === positionActive) ? 'active' : null" 
+              :href="link.url"
+              @click="positionActive = index"
+            >{{ link.text }}</a>
           </li>
         </ul>
       </nav>
@@ -25,6 +28,7 @@ export default {
   name: 'HeaderComp',
   data(){
     return{
+      positionActive: 0,
       links
     }
   }
