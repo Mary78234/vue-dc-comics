@@ -19,71 +19,21 @@
 </template>
 
 <script>
+import links from '../assets/data/links.js';
 
 export default {
   name: 'HeaderComp',
   data(){
     return{
-      links:[
-        {
-          text: 'characters',
-          url: '/',
-          current: false
-        },
-        {
-          text: 'comics',
-          url: '/',
-          current: true
-        },
-        {
-          text: 'movies',
-          url: '/',
-          current: false
-        },
-        {
-          text: 'tv',
-          url: '/',
-          current: false
-        },
-        {
-          text: 'games',
-          url: '/',
-          current: false
-        },
-        {
-          text: 'collectibles',
-          url: '/',
-          current: false
-        },
-        {
-          text: 'videos',
-          url: '/',
-          current: false
-        },
-        {
-          text: 'fans',
-          url: '/',
-          current: false
-        },
-        {
-          text: 'news',
-          url: '/',
-          current: false
-        },
-        {
-          text: 'shop',
-          url: '/',
-          current: false
-        }
-      ]
+      links
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
   @import '../assets/style/vars.scss';
+  @import '../assets/style/mixin.scss';
   
   h2{
     color: $brand-color;
@@ -94,11 +44,8 @@ export default {
   }
 
   .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include center('vertical');
     color: #1C1C1C;
-    height: 100%;
   }
 
   ul{
