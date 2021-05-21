@@ -1,4 +1,5 @@
 //general
+@import 'vars.scss';
 *{
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ header{
 }
 
 main{
-  background: #1C1C1C;
+  background: $brand-color2;
   min-height: 100px;
   color: white
 }
@@ -27,4 +28,10 @@ ul{
 
 a{
   text-decoration: none;
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+  text-transform: uppercase;
 }

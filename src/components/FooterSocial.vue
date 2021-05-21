@@ -8,7 +8,7 @@
 
       <div>
         <ul>
-          <li><a href="#">FOLLOW US</a></li>
+          <li>FOLLOW US</li>
           <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook"></a></li>
           <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter"></a></li>
           <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube"></a></li>
@@ -50,8 +50,8 @@ export default {
     li{
       display: inline-block;
       margin: 0 5px;
+      color: $brand-color;
       a{
-        color: $brand-color;
         font-size: 0.8rem;
         img{
           height: 25px;

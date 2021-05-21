@@ -49,16 +49,15 @@ export default {
 
   .container{
     @include center('vertical');
-    color: #1C1C1C;
   }
 
   ul{
     li{
       display: inline;
-        padding: 10px;
+      padding: 10px;
       a{
         display: inline-block;
-        color: #303030;
+        color: $brand-color2;
         line-height: 96px;
         font-size: 0.6rem;
         font-weight: 600;
