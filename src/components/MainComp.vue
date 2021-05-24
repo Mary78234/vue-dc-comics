@@ -5,7 +5,7 @@
 
     <div class="container">
       <ProductComp v-for="(product, index) in products" :key="index" :card="product" />
-      <button class="btn brand">LOAD MORE</button>
+      <button class="btn-brand">LOAD MORE</button>
     </div>
 
     <MainOption />

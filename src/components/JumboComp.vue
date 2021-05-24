@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <button class="btn brand">CURRENT SERIES</button>
+      <button class="btn-brand">CURRENT SERIES</button>
     </div>
   </section>
 </template>

@@ -13,7 +13,7 @@
 export default {
   name: 'ProductComp',
   props:{
-    card: Array
+    card: Object
   }
 }
 </script>
